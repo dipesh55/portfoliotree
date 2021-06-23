@@ -3,19 +3,22 @@
 	--darkest-color: #008b57;
 	--lightest-color: #def3f6;
 	--highlight-color: #ffffff;
-	--bright-color-1: #00b041;
-	--bright-color-2: #00b041;
+	--bright-color-1: #415a68;
+	--bright-color-2: #415a68;
 	--bright-color-3: #ffffff;
 }
 
 body {
-	background: var(--darkest-color);
-	color: var(--lightest-color);
+	
+	background: radial-gradient(circle, rgb(13, 89, 99), white);
+	
+	
+
 	font-family: 'Roboto', sans-serif;
 }
 
 .container {
-	width: 90%;
+	width: 50%;
 	max-width: 500px;
 	margin: 20px auto;
 	display: flex;
@@ -36,8 +39,9 @@ body {
 .profile-pic {
 	display: inline;
 	margin: 0 auto;
-	height: 100%;
-	width: auto;
+	height: 135px;
+	width: 135px;
+	
 }
 
 a {
@@ -84,7 +88,7 @@ a:hover {
 
 .light {
 	background: var(--bright-color-3);
-}
+} */
 
 .bg-decoration {
 	position: absolute;
