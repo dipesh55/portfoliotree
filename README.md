@@ -1,9 +1,9 @@
 # portfoliotree
 *Light and Clean design
-100% Responsive
-Clean Code
-W3C Valid HTML5 & CSS3
-Working Forms
+*100% Responsive
+*Clean Code
+*W3C Valid HTML5 & CSS3
+*Working Forms
 Google Fonts
 Font Awesome
 Minimal Design
