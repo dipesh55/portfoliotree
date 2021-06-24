@@ -1,5 +1,5 @@
 # portfoliotree
-Light and Clean design
+*Light and Clean design
 100% Responsive
 Clean Code
 W3C Valid HTML5 & CSS3
