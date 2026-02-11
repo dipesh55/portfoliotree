@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-
-	
-
-		<div class="facebook-box">
-
-			<div id="fb-root"></div>
-			
-			<script>(function(d, s, id) {
-			
-			var js, fjs = d.getElementsByTagName(s)[0];
-			
-			if (d.getElementById(id)) return;
-			
-			js = d.createElement(s); js.id = id;
-			
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-			
-			fjs.parentNode.insertBefore(js, fjs);
-			
-			}(document, 'script', 'facebook-jssdk'));</script>
-			
-			
-			
-			<center>
-			
-			<div class="fb-page" data-href="https://www.facebook.com/dipesh.bhatta.18/" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/dipesh.bhatta.18/"><a href="https://www.facebook.com/dipesh.bhatta.18/">Dipesh Bhatta</a></blockquote></div></div>
-			
-			</center>
-			
-			</div>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Dipesh Bhatta - Blog" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Dipesh Blog</title>
 	</head>
-	</body>		
+	<body>
+		<div class="facebook-box">
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+			
+			<div class="container">
+				<div class="fb-page" 
+					data-href="https://www.facebook.com/dipesh.bhatta.18/" 
+					data-width="360" 
+					data-small-header="false" 
+					data-adapt-container-width="true" 
+					data-hide-cover="false" 
+					data-show-facepile="true">
+					<div class="fb-xfbml-parse-ignore">
+						<blockquote cite="https://www.facebook.com/dipesh.bhatta.18/">
+							<a href="https://www.facebook.com/dipesh.bhatta.18/">Dipesh Bhatta</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>

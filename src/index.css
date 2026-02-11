@@ -1,0 +1,44 @@
+/* Modern Dark Theme with Purple/Blue Accents */
+:root {
+	--darkest-color: #1a1a2e;
+	--lightest-color: #a8d8ea;
+	--highlight-color: #ffffff;
+	--bright-color-1: #6c5ce7;
+	--bright-color-2: #5f3dc4;
+	--bright-color-3: #ffffff;
+	--primary-gradient-start: #0f0c29;
+	--primary-gradient-middle: #302b63;
+	--primary-gradient-end: #24243e;
+	--accent-color: #6c5ce7;
+	--accent-hover: #5f3dc4;
+	--text-primary: #ffffff;
+	--text-secondary: #a8d8ea;
+	--bg-card: rgba(108, 92, 231, 0.1);
+	--bg-card-hover: rgba(108, 92, 231, 0.2);
+	--border-color: rgba(168, 216, 234, 0.3);
+	--action-color: #14b8a6;
+	--action-hover: #0d9488;
+	--action-bg: rgba(20, 184, 166, 0.15);
+	--action-border: rgba(20, 184, 166, 0.35);
+}
+
+/* Reset and Base Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-middle) 50%, var(--primary-gradient-end) 100%);
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#root {
+	min-height: 100vh;
+	position: relative;
+}

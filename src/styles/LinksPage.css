@@ -1,28 +1,7 @@
-/* Color palette from https://www.color-hex.com/color-palettes */
-:root {
-	--darkest-color: #008b57;
-	--lightest-color: #def3f6;
-	--highlight-color: #ffffff;
-	--bright-color-1: #415a68;
-	--bright-color-2: #415a68;
-	--bright-color-3: #ffffff;
-	--primary-gradient-start: rgb(13, 89, 99);
-	--primary-gradient-end: white;
-}
-
-/* Reset and Base Styles */
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background: radial-gradient(circle, var(--primary-gradient-start), var(--primary-gradient-end));
-	font-family: 'Roboto', sans-serif;
-	min-height: 100vh;
-	position: relative;
-	overflow-x: hidden;
+/* Links Page Styles */
+.links-page {
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Container */
@@ -39,28 +18,34 @@ body {
 
 /* Profile Picture */
 .circle-shape {
-	width: 140px;
-	height: 140px;
+	width: 200px;
+	height: 200px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 50%;
-	border: 3px solid var(--lightest-color);
+	border: 4px solid var(--accent-color);
 	margin: 0 auto;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--bg-card);
 }
 
 .circle-shape:hover {
 	transform: scale(1.05);
-	box-shadow: 0 0 20px rgba(222, 243, 246, 0.5);
+	box-shadow: 0 0 30px rgba(108, 92, 231, 0.6);
+	border-color: var(--accent-hover);
 }
 
 .profile-pic {
-	display: inline;
-	margin: 0 auto;
-	height: 135px;
-	width: 135px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 50%;
+	display: block;
+	margin: 0;
+	padding: 0;
 }
 
 /* Links */
@@ -78,8 +63,8 @@ a {
 }
 
 .ig-link:hover {
-	color: var(--highlight-color);
-	text-shadow: 0 0 10px var(--highlight-color);
+	color: var(--accent-color);
+	text-shadow: 0 0 15px var(--accent-color);
 }
 
 /* Link List Items */
@@ -89,7 +74,7 @@ a {
 }
 
 .link-list-item {
-	border: 1px solid var(--lightest-color);
+	border: 1px solid var(--border-color);
 	box-sizing: border-box;
 	margin: 20px auto;
 	color: var(--highlight-color);
@@ -104,9 +89,9 @@ a {
 .link-list-item:hover,
 a:hover .link-list-item {
 	color: var(--highlight-color);
-	border-color: var(--highlight-color);
-	text-shadow: 0 0 2em var(--highlight-color);
-	box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+	border-color: var(--accent-color);
+	text-shadow: 0 0 2em var(--accent-color);
+	box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
 	transform: translateY(-2px);
 }
 
@@ -130,7 +115,7 @@ a:hover .link-list-item {
 
 .icon-list-img:hover {
 	transform: scale(1.1) rotate(5deg);
-	filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+	filter: brightness(1.2) drop-shadow(0 0 15px rgba(108, 92, 231, 0.8));
 }
 
 /* Background Colors */
@@ -168,17 +153,6 @@ a:hover .link-list-item {
 	min-height: 100%;
 }
 
-/* Facebook Box */
-.facebook-box {
-	position: relative;
-	z-index: 1;
-	padding: 20px;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
 	.container {
@@ -188,13 +162,8 @@ a:hover .link-list-item {
 	}
 
 	.circle-shape {
-		width: 120px;
-		height: 120px;
-	}
-
-	.profile-pic {
-		height: 115px;
-		width: 115px;
+		width: 160px;
+		height: 160px;
 	}
 
 	.link-list-item {

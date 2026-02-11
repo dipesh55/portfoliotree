@@ -1,0 +1,159 @@
+.experience-section {
+  color: var(--highlight-color);
+}
+
+.timeline {
+  max-width: 950px;
+  margin: 2rem auto 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--bright-color-1), var(--lightest-color));
+  opacity: 0.4;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 18px;
+  height: 18px;
+  background: var(--bright-color-1);
+  border: 3px solid var(--lightest-color);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(108, 92, 231, 0.6);
+}
+
+.timeline-content {
+  background: rgba(108, 92, 231, 0.08);
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  border-radius: 12px;
+  padding: 1.8rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+  border-color: var(--bright-color-1);
+  background: rgba(108, 92, 231, 0.12);
+}
+
+.timeline-header {
+  margin-bottom: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--highlight-color);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-company {
+  color: var(--lightest-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-period {
+  color: var(--lightest-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: block;
+}
+
+.timeline-description {
+  color: var(--lightest-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.timeline-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-achievements li {
+  color: var(--lightest-color);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--highlight-color);
+}
+
+.timeline-location {
+  color: var(--lightest-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-badge {
+  background: rgba(108, 92, 231, 0.15);
+  color: var(--lightest-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  border-color: var(--bright-color-1);
+  background: rgba(108, 92, 231, 0.25);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-marker {
+    left: -1rem;
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+}

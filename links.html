@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Dipesh Bhatta - Portfolio Links" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
 			rel="stylesheet"
@@ -21,21 +21,31 @@
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-
 			gtag('config', 'UA-177429414-1');
 		</script>
+	</head>
+	<body>
+		<div class="bg-decoration">
+			<svg class="bg-decoration__svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+				<defs>
+					<filter id="turbulence" x="0%" y="0%" width="100%" height="100%">
+						<feTurbulence baseFrequency="0.02" numOctaves="3" result="turbulence" />
+						<feDisplacementMap in="SourceGraphic" in2="turbulence" scale="50" />
+					</filter>
+				</defs>
+				<polygon points="0,0 1200,0 1200,800 0,800" fill="rgba(13, 89, 99, 0.1)" filter="url(#turbulence)" />
+			</svg>
+		</div>
 
-		
-	
-	
 		<div class="container">
 			<div class="circle-shape">
 				<a
 					href="https://www.instagram.com/dipesh.90s/"
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Visit Instagram profile"
 				>
-					<img src="images/img.jpg" alt="Pic" class="profile-pic" />
+					<img src="images/img.jpg" alt="Dipesh Bhatta Profile Picture" class="profile-pic" />
 				</a>
 			</div>
 			
@@ -46,23 +56,23 @@
 				class="ig-link"
 			>
 				@Dipesh-Bhatta
-
 			</a>
 			
 			<div class="link-list">
-				
-				<a href="mailto:dipeshbhatta4@gmail.com">
+				<a href="mailto:dipeshbhatta4@gmail.com" aria-label="Contact via email">
 					<div class="link-list-item dark">
 						Contact me
 					</div>
 				</a>
 			</div>
 
-			<!-- code for the blog part -->
 			<div class="link-list">
-				
 				<a 
-				    href="https://nepseanalysis55.blogspot.com/">
+					href="https://nepseanalysis55.blogspot.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Visit blog"
+				>
 					<div class="link-list-item dark">
 						Blog
 					</div>
@@ -74,10 +84,11 @@
 					href="https://github.com/dipesh55"
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Visit GitHub profile"
 				>
 					<img
 						src="images/icon-github.png"
-						alt="github link"
+						alt="GitHub link"
 						class="icon-list-img"
 					/>
 				</a>
@@ -86,10 +97,11 @@
 					href="https://linkedin.com/in/dipeshbhatta4"
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Visit LinkedIn profile"
 				>
 					<img
 						src="images/linkedin.png"
-						alt="linkedin link"
+						alt="LinkedIn link"
 						class="icon-list-img"
 					/>
 				</a>
@@ -98,34 +110,18 @@
 					href="https://twitter.com/dipeshbhatta55"
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Visit Twitter profile"
 				>
 					<img
 						src="images/icon-twitter.png"
-						alt="twitter link"
+						alt="Twitter link"
 						class="icon-list-img"
 					/>
 				</a>
-
-				
-
 			</div>
 		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 		<script src="script.js"></script>
-		<script src="anime.min.js">
-			
-		</script>
-		<script>
-			anime({
-				targets: ['.svg-attributes-demo polygon', 'feTurbulence', 'feDisplacementMap'],
-				points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
-				baseFrequency: 0,
-				scale: 1,
-				loop: true,
-				direction: 'alternate',
-				easing: 'easeInOutExpo'
-			});
-		</script>
-	</head>
 	</body>
 </html>
-
