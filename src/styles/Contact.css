@@ -9,6 +9,14 @@
   margin-top: 2rem;
 }
 
+/* Info only: no form — center and use a single column or grid of cards */
+.contact-content-info-only {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
